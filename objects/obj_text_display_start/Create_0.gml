@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+room_goto(room_end);  // Skips all the other rooms and jumps to room_end
 
 
 //create chatterbox and load yarn file

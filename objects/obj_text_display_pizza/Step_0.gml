@@ -1,32 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+// Step Event of obj_text_display_pizza
 
-var _select = -1;
-
-if ChatterboxIsWaiting(chatterbox){
- if keyboard_check_pressed(vk_space){
-  ChatterboxContinue(chatterbox);
-  text = ChatterboxGetContent(chatterbox,0);
-  nodeTitle   = ChatterboxGetCurrent(chatterbox); }
+if (ChatterboxIsStopped(chatterbox)) {
+    // Ensure textWidth and lineHeight are initialized before using them
+    draw_text_ext_color(x, y, "No more dialogue", lineHeight, textWidth, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 } else {
- if (ChatterboxGetOptionCount(chatterbox)) //If Chatterbox is presenting the user with some options, check for that
-    {
-	  // What the user selected.
-     //You'll need more of these if you have more than three options, of course!
-     if (keyboard_check_released(ord("1"))) _select = 1;      
-     if (keyboard_check_released(ord("2"))) _select = 2;      
-     	
-	}
-}
-
-if (_select != -1)  {
-	
-	if (_select == 1) {
-		room_goto_next();
-	}
-	
-	else if (_select == 2) {
-		game_end();	
-	}
-	
+    // Draw the dialogue text
+    draw_text_ext_color(x, y, text, lineHeight, textWidth, c_aqua, c_aqua, c_aqua, c_aqua, 1);
 }
