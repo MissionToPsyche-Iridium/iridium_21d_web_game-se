@@ -53,6 +53,7 @@
   },
   "name":"lula_v_0_1",
   "resources":[
+    {"id":{"name":"fnt_skip_message","path":"fonts/fnt_skip_message/fnt_skip_message.yy",},},
     {"id":{"name":"obj_intro","path":"objects/obj_intro/obj_intro.yy",},},
     {"id":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},},
     {"id":{"name":"obj_lula_deck","path":"objects/obj_lula_deck/obj_lula_deck.yy",},},
