@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"rythemFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rythemFunctions",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
