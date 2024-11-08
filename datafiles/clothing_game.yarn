@@ -1,0 +1,167 @@
+title: Start
+---
+Lula:  Help me find the right clothes to impress the board!
+
+Lula:  Did you help me find the right clothes?
+  ->Yes
+  ->No
+===
+
+title:  Scientist1_Briefcase
+---
+Scientist1:  Hi!  If you answer this question, I will help you get ready for your presentation!
+
+Scientist1:  Is Psyche a class M asteroid?
+  ->Yes
+     Scientist1:  Correct!
+  ->No
+    Scientist1:  Incorrect!
+
+Scientist1:  Let's talk soon!   
+
+===
+
+title:  Scientist1_Cravate
+---
+Scientist1:  Did you answer my second question correctly?
+  ->Yes
+  ->No
+Scientist1:  Let's talk soon!
+===
+
+title:  Scientist1_Monocle
+---
+Scientist1:  Did you answer my third question correctly?
+  ->Yes
+  ->No
+Scientist1:  Let's talk soon!
+===
+
+title:  Scientist1_Done
+---
+Scientist1:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Scientist2_Goggles
+---
+Scientist2:  Did you answer my first question correctly?
+  ->Yes
+  ->No
+Scientist2:  Let's talk soon!
+===
+
+title:  Scientist2_Snorkel
+---
+Scientist2:  Did you answer my first question correctly?
+  ->Yes
+  ->No
+
+Scientist2:  Let's talk soon!
+===
+
+title:  Scientist2_Floaties
+---
+Scientist2:  Did you answer my first question correctly?
+  ->Yes
+  ->No
+
+Scientist2:  Let's talk soon!
+===
+
+title:  Scientist2_Done
+---
+Scientist2:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Scientist3_Helm
+---
+Scientist3:  Did you answer my question correctly?
+  ->Yes
+  ->No
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Armor
+---
+Scientist3:  Did you answer my question correctly?
+  ->Yes
+  ->No
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Boots
+---
+Scientist3:  Did you answer my question correctly?
+  ->Yes
+  ->No
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Done
+---
+Scientist3:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Door_Incomplete
+---
+: You still have scientists to talk to!  Come back later!
+===
+
+title:  Door_Professional
+---
+: You look great!  You are going to nail this pitch!
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title:  Door_Swim
+---
+:  ...You know, I don't think there is any water on Psyche... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+:
+===
+
+title:  Door_Knight
+---
+:  ...I think that's the wrong kind of protective suit... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title: Mirror
+---
+: What would you like to wear?
+  ->Cravate, Monocle, Briefcase
+  ->Goggles, Snorkel, Floaties
+  ->Knight Helmet, Armor, Knight Boots
+
+:  Looking good!
+===
+
+title: pq1
+---
+Psyche is a type ___ asteroid?
+  -> M <<jump correct>>  // Jump to correct node
+  -> A <<jump incorrect>> // Jump to incorrect node
+===
+
+title: correct
+---
+Correct! Psyche is a type M asteroid.
+===
+
+title: incorrect
+---
+Incorrect. Psyche is not a type A asteroid.
+===

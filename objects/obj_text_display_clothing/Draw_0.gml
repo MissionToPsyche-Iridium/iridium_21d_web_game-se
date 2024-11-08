@@ -17,7 +17,7 @@ _x = x + 20;
 
 //if stopped means there is not more text or options, that is the end of the yarn file or path
 if ChatterboxIsStopped(chatterbox){
-   draw_text_ext_color(x,y,"out of text",lineHeight,textWidth, c_aqua,  c_aqua,  c_aqua,  c_aqua, 1);
+   draw_text_ext_color(x,y," ",lineHeight,textWidth, c_aqua,  c_aqua,  c_aqua,  c_aqua, 1);
 } else 
 	//this else branch is to print the main text and the if is in case of options
 	{

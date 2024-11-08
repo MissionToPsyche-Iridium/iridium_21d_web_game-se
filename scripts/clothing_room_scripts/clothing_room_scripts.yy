@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"clothing_room_scripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"clothing_room_scripts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
