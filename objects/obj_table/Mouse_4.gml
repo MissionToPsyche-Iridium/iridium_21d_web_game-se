@@ -63,6 +63,7 @@ if (occupied && obj_controller.selected_pizza != noone) {
         obj_controller.selected_pizza = noone;  // Clear the selected pizza
         show_debug_message("Pizza delivered to the correct customer.");
     } else {
+		obj_controller.selected_pizza = noone;  // Clear the selected pizza
         show_debug_message("This pizza doesn't belong to the customer at this table or no longer exists.");
     }
 }

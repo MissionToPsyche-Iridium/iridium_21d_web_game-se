@@ -1,9 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sign",
-  "eventList":[],
+  "%Name":"obj_sign_closed",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_sign",
+  "name":"obj_sign_closed",
   "overriddenProperties":[],
   "parent":{
     "name":"Pizza Objects",
@@ -28,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sign",
-    "path":"sprites/spr_sign/spr_sign.yy",
+    "name":"spr_sign_closed",
+    "path":"sprites/spr_sign_closed/spr_sign_closed.yy",
   },
   "spriteMaskId":null,
   "visible":true,
