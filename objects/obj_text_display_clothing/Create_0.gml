@@ -4,12 +4,26 @@
 
 //create chatterbox and load yarn file
 
-ChatterboxLoadFromFile("clothing_game.yarn");
-chatterbox = ChatterboxCreate("clothing_game.yarn");
+ChatterboxLoadFromFile("llamaStub.yarn");
+chatterbox = ChatterboxCreate("llamaStub.yarn");
 
 //determine which node from yarn file to load based on room name
 
-ChatterboxJump(chatterbox, "Start");
+if (room == room_start) {
+	ChatterboxJump(chatterbox,"Start");
+} else if (room == room_clothing) {
+	ChatterboxJump(chatterbox,"ClothingGame");
+} else if (room == room_jump) {
+	ChatterboxJump(chatterbox,"JumpGame");
+}  else if (room == room_pizza) {
+	ChatterboxJump(chatterbox,"PizzaGame");
+}  else if (room == room_deck) {
+	ChatterboxJump(chatterbox,"DeckGame");
+}  else if (room == room_rhythm) {
+	ChatterboxJump(chatterbox,"RhythmGame");
+} else if (room == room_end) {
+	ChatterboxJump(chatterbox,"End");
+}
 
 
 //variables for text box set up
@@ -19,5 +33,5 @@ lineHeight = 28;
 
 //get text and node title from yarn file
 text = ChatterboxGetContent(chatterbox, 0);
-node_title = ChatterboxGetCurrent(chatterbox);
+nodeTitle = ChatterboxGetCurrent(chatterbox);
 

@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"__ChatterboxConfigMacros",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"__ChatterboxConfigMacros",
-  "parent":{
-    "name":"Chatterbox",
-    "path":"folders/Chatterbox.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "__ChatterboxConfigMacros",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Chatterbox",
+    "path": "folders/Chatterbox.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }

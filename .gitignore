@@ -74,9 +74,3 @@ bin/
 
 # VS Code
 .vscode/
-
-
-# Local Files
-/sprite_pics/
-# Local files
-*jareth*

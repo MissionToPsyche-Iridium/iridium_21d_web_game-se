@@ -1,13 +1,11 @@
 {
-  "$GMScript":"v1",
-  "%Name":"ChatterboxGetOptionSpeaker",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"ChatterboxGetOptionSpeaker",
-  "parent":{
-    "name":"Option Getters",
-    "path":"folders/Chatterbox/Option Getters.yy",
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "ChatterboxGetOptionSpeaker",
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Option Getters",
+    "path": "folders/Chatterbox/Option Getters.yy",
   },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
 }
