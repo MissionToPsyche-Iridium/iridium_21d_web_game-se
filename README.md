@@ -4,4 +4,5 @@
 
 ### **Criteria:**
 - Player must win game.
+- You only get 5 customers.
 - Requirement to win = Make $50 in the day.
