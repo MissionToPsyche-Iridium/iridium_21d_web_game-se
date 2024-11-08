@@ -46,7 +46,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
 	instance_deactivate_object(obj_customer);
 	instance_deactivate_object(obj_table);
 	game_over = true;
-	} else if (spawn_counter == 5) {
+	} else if (spawn_counter == 2) {
 		instance_create_layer(70, 504, "Instances", obj_sign_closed);
 	} else {
 	// spawn customer off-screen at (0, 576)
