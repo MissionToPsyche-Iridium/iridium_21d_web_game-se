@@ -7,7 +7,7 @@ game_paused = false;
 customers_remaining = 5;
 game_over = false;
 spawn_counter = 0;
-
+game_time = 0;
 global.plates = array_create(7);
 
 // Assign each plate instance to the array

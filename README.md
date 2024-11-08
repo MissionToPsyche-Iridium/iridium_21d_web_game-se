@@ -5,4 +5,4 @@
 ### **Criteria:**
 - Player must win game.
 - You only get 5 customers.
-- Requirement to win = Make $50 in the day.
+- Requirement to win = Serve all customers within 150 seconds.
