@@ -9,13 +9,28 @@ if (global.gamepaused) {
     draw_set_color(c_black);  // Reset color to default
 }
 
-if (game_over) {
+if (game_over && player_money >= 50) {
 // Display "You Win!" message and total score
     draw_set_color(c_white);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
 
     var win_text = "You Win!";
+    var score_text = "Total Score: $" + string(obj_controller.player_money);
+	
+	// Center these messages on the screen
+    var center_x = room_width / 2;
+    var center_y = room_height / 2;
+
+    draw_text_transformed(center_x, center_y - 20, win_text, 2, 2, 0);  // Display "You Win!" message
+    draw_text(center_x, center_y + 20, score_text);  // Display the total score	
+} else if (game_over) {
+	// Display "You Win!" message and total score
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+
+    var win_text = "You Lose!";
     var score_text = "Total Score: $" + string(obj_controller.player_money);
 	
 	// Center these messages on the screen
