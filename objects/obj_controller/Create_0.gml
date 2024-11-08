@@ -4,6 +4,9 @@ selected_customer = noone;  // start with no customer selected
 selected_pizza = noone;
 player_money = 0;
 game_paused = false;
+customers_remaining = 5;
+game_over = false;
+spawn_counter = 0;
 
 global.plates = array_create(7);
 

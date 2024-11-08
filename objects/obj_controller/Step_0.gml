@@ -11,10 +11,6 @@ if (global.gamepaused) {
 	instance_deactivate_object(inst_54E540F5); //obj_lula_pizza
 	instance_deactivate_object(inst_36958C6C); //obj_chef
 	
-	// Set the pause message's text color, scale, and position
-    draw_set_color(c_red);  // Example: Red text color for visibility
-    draw_text_transformed(room_width / 2, room_height / 2, "PAUSED", 3, 3, 0);  // Centered, scaled text
-    draw_set_color(c_white);  // Reset color afterward
 } else {
 	if(obj_pause.pause_clicked && !global.gamepaused) {
 		//instance_activate_object(inst_27313940); //obj_table 1
@@ -43,12 +39,23 @@ with (obj_customer) {
 
 // spawn logic
 if (spawn_timer >= spawn_interval && !customer_waiting) {
-    // spawn customer off-screen at (0, 576)
+    if (customers_remaining == 0) {
+	instance_deactivate_object(inst_54E540F5); //obj_lula_pizza
+	instance_deactivate_object(inst_36958C6C); //obj_chef
+	instance_deactivate_object(obj_plate);
+	instance_deactivate_object(obj_customer);
+	instance_deactivate_object(obj_table);
+	game_over = true;
+	} else if (spawn_counter == 5) {
+		instance_create_layer(70, 504, "Instances", obj_sign_closed);
+	} else {
+	// spawn customer off-screen at (0, 576)
     var customer = instance_create_layer(0, 576, "Instances", obj_customer);
     
-    show_debug_message("Customer spawned at (0, 576)");
-    
+    show_debug_message("customers_remaining = " + string(customers_remaining));
     // reset the timer
     spawn_timer = 0; 
-}
+	spawn_counter++;
+	}
+} 
 }
