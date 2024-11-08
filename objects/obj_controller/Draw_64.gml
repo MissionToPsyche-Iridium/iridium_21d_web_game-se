@@ -9,7 +9,7 @@ if (global.gamepaused) {
     draw_set_color(c_black);  // Reset color to default
 }
 
-if (game_over && game_time <= 150) {
+if (game_over && game_time <= 100) {
 // Display "You Win!" message and total score
     draw_set_color(c_white);
     draw_set_halign(fa_center);
