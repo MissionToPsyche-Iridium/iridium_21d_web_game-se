@@ -20,11 +20,26 @@ if (!occupied && obj_controller.selected_customer != noone) {
 }
 
 if (occupied && obj_controller.selected_tool != noone) {
-	show_debug_message("deliver_tool from table code");
-    // Move Lula to the table
-    with (obj_lula_pizza) {
-        move_target_x = other.x;
-        move_target_y = other.y;
-        current_action = "deliver_tool";
+    // Get the selected tool instance
+    var selected_tool = obj_controller.selected_tool;
+    
+    // Check if the selected tool instance matches the customer's required tool
+    if (instance_exists(selected_tool) && instance_exists(customer_id)) {
+        // Move the tool to the table's position
+        selected_tool.x = x + 50;  // Align the tool to the table's position
+        selected_tool.y = y + 10;
+
+        // Start the customer using the tool
+        var customer = instance_nearest(x, y, obj_customer);
+        if (instance_exists(customer)) {
+            customer.ready_to_use_tool = true;
+            customer.using_tool_timer = 300;  // Set tool usage duration
+        }
+
+        // Clear the selected tool
+        obj_controller.selected_tool = noone;
+        show_debug_message("Correct tool delivered to the customer.");
+    } else {
+        show_debug_message("This tool doesn't match the customer's request or no longer exists.");
     }
 }
