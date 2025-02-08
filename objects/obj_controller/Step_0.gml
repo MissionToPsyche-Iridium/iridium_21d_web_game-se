@@ -60,7 +60,7 @@ if (spawn_timer >= spawn_interval && !customer_waiting) {
     // Initialize the customer
     scr_init_customer(customer);
 
-    show_debug_message("Customer spawned at (0, 576): " + string(selected_scientist));
+    //show_debug_message("Customer spawned at (0, 576): " + string(selected_scientist));
     
     // Reset the timer
     spawn_timer = 0;

@@ -222,6 +222,7 @@
     {"id":{"name":"obj_text_display_rhythm","path":"objects/obj_text_display_rhythm/obj_text_display_rhythm.yy",},},
     {"id":{"name":"obj_text_display_start","path":"objects/obj_text_display_start/obj_text_display_start.yy",},},
     {"id":{"name":"obj_timer_powerup","path":"objects/obj_timer_powerup/obj_timer_powerup.yy",},},
+    {"id":{"name":"obj_tool","path":"objects/obj_tool/obj_tool.yy",},},
     {"id":{"name":"obj_win_screen","path":"objects/obj_win_screen/obj_win_screen.yy",},},
     {"id":{"name":"obj_zuber","path":"objects/obj_zuber/obj_zuber.yy",},},
     {"id":{"name":"pauseScreenRyth","path":"objects/pauseScreenRyth/pauseScreenRyth.yy",},},

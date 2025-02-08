@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_magnetrometer",
+  "%Name":"obj_tool",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_magnetrometer",
+  "name":"obj_tool",
   "overriddenProperties":[],
   "parent":{
     "name":"Tools",
     "path":"folders/Objects/Pizza Objects/Tools.yy",
   },
-  "parentObjectId":{
-    "name":"obj_tool",
-    "path":"objects/obj_tool/obj_tool.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_magnetrometer",
-    "path":"sprites/spr_magnetrometer/spr_magnetrometer.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
