@@ -18,8 +18,18 @@ if (current_action == "move_to_customer") {
     if (move_target_x != -1 && move_target_y != -1) {
         
         
-        // Create and follow a path using mp_grid
-        if (!path_active) {
+        if (initial_movement) {
+                    // Determine the path dynamically based on table instance
+                    var path_name = "Path_" + table_instance;
+                    var target_path = asset_get_index(path_name);
+        
+                    if (path_to_follow != -1) {
+                        path_start(target_path, move_speed, path_action_stop, false);
+                        path_active = true;
+                    } else {
+                        show_debug_message(string(table_instance));
+                    }
+                } else {
 			move_speed = 4;
             
 			if (mp_grid_path(global.nav_grid, path, x, y, move_target_x + 50, move_target_y - 50, true)) {
