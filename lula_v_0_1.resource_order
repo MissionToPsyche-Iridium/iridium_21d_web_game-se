@@ -1,11 +1,13 @@
 {
-  "FolderOrderSettings":[{"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},],
+  "FolderOrderSettings":[
+    {"name":"Scenes","order":1,"path":"folders/Sprites/clothing_game/Scenes.yy",},
+  ],
   "ResourceOrderSettings":[
-
-    {"name":"snd_design_for_dreaming_lo_fi_astronaut","order":1,"path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"snd_autumn_lo_fi_astronaut","order":2,"path":"sounds/snd_autumn_lo_fi_astronaut/snd_autumn_lo_fi_astronaut.yy",},
+    {"name":"snd_design_for_dreaming_lo_fi_astronaut","order":1,"path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},
     {"name":"time_warning_music","order":2,"path":"sounds/time_warning_music/time_warning_music.yy",},
     {"name":"time_warning_sound","order":1,"path":"sounds/time_warning_sound/time_warning_sound.yy",},
     {"name":"logo_artwork","order":20,"path":"sprites/logo_artwork/logo_artwork.yy",},

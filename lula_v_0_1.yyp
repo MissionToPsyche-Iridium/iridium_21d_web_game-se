@@ -417,6 +417,7 @@
     {"id":{"name":"phase_passed_sound","path":"sounds/phase_passed_sound/phase_passed_sound.yy",},},
     {"id":{"name":"RetroFuture_Dirty_timing","path":"sounds/RetroFuture_Dirty_timing/RetroFuture_Dirty_timing.yy",},},
     {"id":{"name":"RetroFuture_Dirty","path":"sounds/RetroFuture_Dirty/RetroFuture_Dirty.yy",},},
+    {"id":{"name":"snd_autumn_lo_fi_astronaut","path":"sounds/snd_autumn_lo_fi_astronaut/snd_autumn_lo_fi_astronaut.yy",},},
     {"id":{"name":"snd_background_music","path":"sounds/snd_background_music/snd_background_music.yy",},},
     {"id":{"name":"snd_correct","path":"sounds/snd_correct/snd_correct.yy",},},
     {"id":{"name":"snd_design_for_dreaming_lo_fi_astronaut","path":"sounds/snd_design_for_dreaming_lo_fi_astronaut/snd_design_for_dreaming_lo_fi_astronaut.yy",},},

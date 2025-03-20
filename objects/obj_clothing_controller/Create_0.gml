@@ -82,7 +82,7 @@ cloting_from_s3 = 0;
 ready_for_results_1 = false;
 ready_for_results_2 = false;
 
-wait_timer = 3200;
+wait_timer = 1600;
 
 number_professional = 0;
 
