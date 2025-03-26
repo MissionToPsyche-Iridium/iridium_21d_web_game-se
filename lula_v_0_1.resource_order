@@ -24,11 +24,13 @@
     {"name":"luna_stare_cartoon","order":15,"path":"sprites/luna_stare_cartoon/luna_stare_cartoon.yy",},
     {"name":"luna_think_cartoon","order":7,"path":"sprites/luna_think_cartoon/luna_think_cartoon.yy",},
     {"name":"luna_wave_cartoon","order":1,"path":"sprites/luna_wave_cartoon/luna_wave_cartoon.yy",},
+    {"name":"spr_lab_floor","order":2,"path":"sprites/spr_lab_floor/spr_lab_floor.yy",},
     {"name":"spr_lula_walk","order":16,"path":"sprites/spr_lula_walk/spr_lula_walk.yy",},
     {"name":"spr_lula","order":17,"path":"sprites/spr_lula/spr_lula.yy",},
     {"name":"spr_luna_Jump","order":2,"path":"sprites/spr_luna_Jump/spr_luna_Jump.yy",},
     {"name":"spr_luna_push","order":5,"path":"sprites/spr_luna_push/spr_luna_push.yy",},
     {"name":"spr_luna_stand2","order":6,"path":"sprites/spr_luna_stand2/spr_luna_stand2.yy",},
     {"name":"spr_luna_Walk","order":11,"path":"sprites/spr_luna_Walk/spr_luna_Walk.yy",},
+    {"name":"tile_lab_floor","order":1,"path":"tilesets/tile_lab_floor/tile_lab_floor.yy",},
   ],
 }
