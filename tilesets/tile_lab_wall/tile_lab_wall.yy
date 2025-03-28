@@ -1,25 +1,25 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"tile_lab_floor",
+  "%Name":"tile_lab_wall",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"tile_lab_floor",
+  "name":"tile_lab_wall",
   "out_columns":8,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"clothing_game",
-    "path":"folders/Tile Sets/clothing_game.yy",
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_lab_floor",
-    "path":"sprites/spr_lab_floor/spr_lab_floor.yy",
+    "name":"spr_lab_wall",
+    "path":"sprites/spr_lab_wall/spr_lab_wall.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
