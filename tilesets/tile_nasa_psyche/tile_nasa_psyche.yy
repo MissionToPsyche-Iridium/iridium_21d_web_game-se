@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet4",
+  "%Name":"tile_nasa_psyche",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet4",
-  "out_columns":5,
+  "name":"tile_nasa_psyche",
+  "out_columns":2,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_color_blocks",
-    "path":"sprites/spr_color_blocks/spr_color_blocks.yy",
+    "name":"spr_nasa_pysche_tile",
+    "path":"sprites/spr_nasa_pysche_tile/spr_nasa_pysche_tile.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -28,11 +28,11 @@
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
-  "tileHeight":16,
-  "tilehsep":2,
-  "tilevsep":2,
-  "tileWidth":16,
+  "tileHeight":230,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":230,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":25,
+  "tile_count":6,
 }
