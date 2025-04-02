@@ -5,7 +5,7 @@ audio_stop_all();
 
 // Play new sound on loop
 var new_sound = snd_autumn_lo_fi_astronaut; // Replace with your sound asset
-audio_play_sound(new_sound, 1, true);
+//audio_play_sound(new_sound, 1, true);
 
 
 ChatterboxLoadFromFile("clothing_game_random.yarn");
