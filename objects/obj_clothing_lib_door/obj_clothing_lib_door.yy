@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clothing_door",
-    "path":"sprites/spr_clothing_door/spr_clothing_door.yy",
+    "name":"spr_library_door",
+    "path":"sprites/spr_library_door/spr_library_door.yy",
   },
   "spriteMaskId":null,
   "visible":true,

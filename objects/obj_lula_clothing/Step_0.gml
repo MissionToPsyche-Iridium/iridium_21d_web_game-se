@@ -66,9 +66,9 @@ if (collision_circle(x, y, 64, obj_clothing_lib_door, false, true)) {
     if (!has_crossed_door) {
         // Check position relative to the door and adjust
         if (x > obj_clothing_lib_door.x) {
-            x = obj_clothing_lib_door.x - 64; // Move to the right of the door
+            x = obj_clothing_lib_door.x - 164; // Move to the right of the door
         } else {
-            x = obj_clothing_lib_door.x + 64; // Move to the left of the door
+            x = obj_clothing_lib_door.x + 164; // Move to the left of the door
         }
 
         // Set the flag to prevent repeated movement

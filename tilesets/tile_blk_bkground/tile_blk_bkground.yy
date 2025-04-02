@@ -12,8 +12,8 @@
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Tile Sets",
-    "path":"folders/Tile Sets.yy",
+    "name":"clothing_game",
+    "path":"folders/Tile Sets/clothing_game.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

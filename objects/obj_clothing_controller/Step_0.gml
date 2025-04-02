@@ -32,9 +32,10 @@ if (obj_clothing_controller.ready_for_results_2) {
     } else {
 		
 		if (global.mode == "story") {
+		audio_stop_all();
         room_goto_next(); // Only go to the next room when timer hits 0
 		}
 		
-		else room_goto(room_intro);
+		else {audio_stop_all(); room_goto(room_intro);}
     }
 }

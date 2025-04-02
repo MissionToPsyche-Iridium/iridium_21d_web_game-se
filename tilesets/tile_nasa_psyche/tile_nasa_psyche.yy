@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tile_nasa_psyche",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tile_nasa_psyche",
+  "out_columns":2,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"clothing_game",
+    "path":"folders/Tile Sets/clothing_game.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_nasa_pysche_tile",
+    "path":"sprites/spr_nasa_pysche_tile/spr_nasa_pysche_tile.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":230,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":230,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":6,
+}
