@@ -56,6 +56,24 @@ if (nearest != noone) {
         case "door":
             // Door-specific logic
             break;
+		 case "scientist1":
+            // Show text or do something
+            break;
+        case "mirror":
+            // Mirror interaction logic
+            break;
+        case "door":
+            // Door-specific logic
+            break;
+		 case "scientist1":
+            // Show text or do something
+            break;
+        case "mirror":
+            // Mirror interaction logic
+            break;
+        case "door":
+            // Door-specific logic
+            break;
     }
 }
 
