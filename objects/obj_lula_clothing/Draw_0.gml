@@ -4,6 +4,11 @@
 
 draw_self();
 
+
+
+
+
+
 if (!obj_clothing_controller.dressed) {
 	
 	

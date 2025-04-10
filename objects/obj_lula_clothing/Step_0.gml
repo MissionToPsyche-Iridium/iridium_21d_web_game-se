@@ -1,102 +1,96 @@
-/// @description Optimized Step Event for HTML5
-
-// Movement input
+// === MOVEMENT INPUT ===
 var moveRight = keyboard_check(vk_right);
 var moveLeft  = keyboard_check(vk_left);
 var moveUp    = keyboard_check(vk_up);
 var moveDown  = keyboard_check(vk_down);
 
-// Velocity calculation
 var vx = (moveRight - moveLeft) * walkSpeed;
 var vy = (moveDown - moveUp) * walkSpeed;
 
-// Movement with collision
+// === MOVEMENT COLLISION (USING instance_place FOR HTML5 SPEED) ===
 if (vx != 0 || vy != 0) {
-    if (!place_meeting(x + vx, y, obj_par_environment)) {
+    var bump_x = instance_place(x + vx, y, obj_par_environment);
+    if (bump_x == noone) bump_x = instance_place(x + vx, y, obj_par_interactable);
+    if (bump_x == noone || bump_x.object_index == obj_clothing_lib_door) {
         x += vx;
     }
-    if (!place_meeting(x, y + vy, obj_par_environment)) {
+
+    var bump_y = instance_place(x, y + vy, obj_par_environment);
+    if (bump_y == noone) bump_y = instance_place(x, y + vy, obj_par_interactable);
+    if (bump_y == noone || bump_y.object_index == obj_clothing_lib_door) {
         y += vy;
     }
 }
 
-// --- INTERACTION LOGIC ---
-
-var detection_radius = 64; // Set to max needed radius
-var nearest = noone;
-var min_dist = detection_radius;
-
-with (obj_clothing_parent) {
-    var dist = point_distance(x, y, other.x, other.y);
-    if (dist < min_dist) {
-        nearest = id;
-        min_dist = dist;
-    }
-}
-
-// Reset interaction flags
+// === RESET COLLISION FLAGS ON CONTROLLER ===
 with (obj_clothing_controller) {
-    colliding_with = "";
+    colliding_with_scientist_1 = false;
+    colliding_with_scientist_2 = false;
+    colliding_with_scientist_3 = false;
+    colliding_with_door        = false;
+    colliding_with_mirror      = false;
+    colliding_with_book        = false;
+    colliding_with_book1       = false;
+    colliding_with_book2       = false;
+    colliding_with_book3       = false;
+    colliding_with_book4       = false;
+    colliding_with_book5       = false;
+    colliding_with_book6       = false;
+    colliding_with_book7       = false;
+    colliding_with_book8       = false;
+    colliding_with_book9       = false;
+    colliding_with_book10      = false;
 }
 
-// If something is nearby, set appropriate flag
-if (nearest != noone) {
+// === PROXIMITY DETECTION FOR INTERACTABLES (ONLY WHEN MOVING) ===
+if (vx != 0 || vy != 0) {
+    var interact = collision_circle(x, y, 64, obj_par_interactable, false, true);
+    if (interact != noone) {
+        var obj_id = interact.object_index;
+        with (obj_clothing_controller) {
+            switch (obj_id) {
+                case obj_scientist_1:      colliding_with_scientist_1 = true; break;
+                case obj_scientist_2:      colliding_with_scientist_2 = true; break;
+                case obj_scientist_3:      colliding_with_scientist_3 = true; break;
+                case obj_clothing_book:    colliding_with_book        = true; break;
+                case obj_clothing_book_1:  colliding_with_book1       = true; break;
+                case obj_clothing_book_2:  colliding_with_book2       = true; break;
+                case obj_clothing_book_3:  colliding_with_book3       = true; break;
+                case obj_clothing_book_4:  colliding_with_book4       = true; break;
+                case obj_clothing_book_5:  colliding_with_book5       = true; break;
+                case obj_clothing_book_6:  colliding_with_book6       = true; break;
+                case obj_clothing_book_7:  colliding_with_book7       = true; break;
+                case obj_clothing_book_8:  colliding_with_book8       = true; break;
+                case obj_clothing_book_9:  colliding_with_book9       = true; break;
+                case obj_clothing_book_10: colliding_with_book10      = true; break;
+            }
+        }
+    }
+}
+
+// === ADDITIONAL PROXIMITY CHECK FOR DOOR / MIRROR ===
+var env = collision_circle(x, y, 16, obj_par_environment, false, true);
+if (env != noone) {
+    var env_id = env.object_index;
     with (obj_clothing_controller) {
-        colliding_with = nearest.interact_type;
-    }
-
-    // Optional: Do something immediately based on type
-    switch (nearest.interact_type) {
-        case "scientist1":
-            // Show text or do something
-            break;
-        case "mirror":
-            // Mirror interaction logic
-            break;
-        case "door":
-            // Door-specific logic
-            break;
-		 case "scientist1":
-            // Show text or do something
-            break;
-        case "mirror":
-            // Mirror interaction logic
-            break;
-        case "door":
-            // Door-specific logic
-            break;
-		 case "scientist1":
-            // Show text or do something
-            break;
-        case "mirror":
-            // Mirror interaction logic
-            break;
-        case "door":
-            // Door-specific logic
-            break;
+        if (env_id == obj_clothing_door)   colliding_with_door   = true;
+        if (env_id == obj_clothing_mirror) colliding_with_mirror = true;
     }
 }
 
-// --- DOOR TELEPORT LOGIC ---
-
-// Initialize the flag if not set
-if (!variable_instance_exists(id, "has_crossed_door")) {
-   has_crossed_door = false;
-}
-
-var door = instance_nearest(x, y, obj_clothing_lib_door);
-if (door != noone && point_distance(x, y, door.x, door.y) < 64) {
+// === TELEPORTATION LOGIC FOR obj_clothing_lib_door ===
+if (collision_circle(x, y, 64, obj_clothing_lib_door, false, true)) {
     if (!has_crossed_door) {
-        if (x > door.x) {
-            x = door.x - 164;
+        if (x > obj_clothing_lib_door.x) {
+            x = obj_clothing_lib_door.x - 128;
         } else {
-            x = door.x + 164;
+            x = obj_clothing_lib_door.x + 128;
         }
         has_crossed_door = true;
     }
 }
 
-// Reset flag when far enough
-if (door != noone && point_distance(x, y, door.x, door.y) > 128) {
+// === Reset teleport flag when far enough from door ===
+if (!collision_circle(x, y, 128, obj_clothing_lib_door, false, true)) {
     has_crossed_door = false;
 }

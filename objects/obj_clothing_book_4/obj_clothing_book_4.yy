@@ -10,8 +10,8 @@
     "path":"folders/Objects/clothing_game/environment/lib_books.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_environment",
-    "path":"objects/obj_par_environment/obj_par_environment.yy",
+    "name":"obj_par_interactable",
+    "path":"objects/obj_par_interactable/obj_par_interactable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

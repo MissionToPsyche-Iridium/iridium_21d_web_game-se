@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_clothing_book_6",
+  "%Name":"obj_par_interactable",
   "eventList":[],
   "managed":true,
-  "name":"obj_clothing_book_6",
+  "name":"obj_par_interactable",
   "overriddenProperties":[],
   "parent":{
-    "name":"lib_books",
-    "path":"folders/Objects/clothing_game/environment/lib_books.yy",
+    "name":"control",
+    "path":"folders/Objects/clothing_game/control.yy",
   },
-  "parentObjectId":{
-    "name":"obj_par_interactable",
-    "path":"objects/obj_par_interactable/obj_par_interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_clothing_book",
-    "path":"sprites/spr_clothing_book/spr_clothing_book.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

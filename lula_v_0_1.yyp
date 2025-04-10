@@ -214,6 +214,7 @@
     {"id":{"name":"obj_next_game_button","path":"objects/obj_next_game_button/obj_next_game_button.yy",},},
     {"id":{"name":"obj_par_clothing","path":"objects/obj_par_clothing/obj_par_clothing.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
+    {"id":{"name":"obj_par_interactable","path":"objects/obj_par_interactable/obj_par_interactable.yy",},},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},
     {"id":{"name":"obj_ph_fail_hoops","path":"objects/obj_ph_fail_hoops/obj_ph_fail_hoops.yy",},},
     {"id":{"name":"obj_ph_hoops","path":"objects/obj_ph_hoops/obj_ph_hoops.yy",},},
