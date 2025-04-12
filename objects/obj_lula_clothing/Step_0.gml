@@ -30,16 +30,7 @@ with (obj_clothing_controller) {
     colliding_with_door        = false;
     colliding_with_mirror      = false;
     colliding_with_book        = false;
-    colliding_with_book1       = false;
-    colliding_with_book2       = false;
-    colliding_with_book3       = false;
-    colliding_with_book4       = false;
-    colliding_with_book5       = false;
-    colliding_with_book6       = false;
-    colliding_with_book7       = false;
-    colliding_with_book8       = false;
-    colliding_with_book9       = false;
-    colliding_with_book10      = false;
+    
 }
 
 // === PROXIMITY DETECTION FOR INTERACTABLES (ONLY WHEN MOVING) ===
@@ -52,17 +43,8 @@ if (vx != 0 || vy != 0) {
                 case obj_scientist_1:      colliding_with_scientist_1 = true; break;
                 case obj_scientist_2:      colliding_with_scientist_2 = true; break;
                 case obj_scientist_3:      colliding_with_scientist_3 = true; break;
-                case obj_clothing_book:    colliding_with_book        = true; break;
-                case obj_clothing_book_1:  colliding_with_book1       = true; break;
-                case obj_clothing_book_2:  colliding_with_book2       = true; break;
-                case obj_clothing_book_3:  colliding_with_book3       = true; break;
-                case obj_clothing_book_4:  colliding_with_book4       = true; break;
-                case obj_clothing_book_5:  colliding_with_book5       = true; break;
-                case obj_clothing_book_6:  colliding_with_book6       = true; break;
-                case obj_clothing_book_7:  colliding_with_book7       = true; break;
-                case obj_clothing_book_8:  colliding_with_book8       = true; break;
-                case obj_clothing_book_9:  colliding_with_book9       = true; break;
-                case obj_clothing_book_10: colliding_with_book10      = true; break;
+                case obj_clothing_book:    colliding_with_book        = true;  show_library_bubble = true; break;
+                
             }
         }
     }

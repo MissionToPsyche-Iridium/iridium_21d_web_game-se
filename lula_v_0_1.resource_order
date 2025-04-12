@@ -20,6 +20,7 @@
     {"name":"obj_jump_fade","order":1,"path":"objects/obj_jump_fade/obj_jump_fade.yy",},
     {"name":"obj_jump_intro_arrow","order":3,"path":"objects/obj_jump_intro_arrow/obj_jump_intro_arrow.yy",},
     {"name":"obj_jump_intro_banner","order":2,"path":"objects/obj_jump_intro_banner/obj_jump_intro_banner.yy",},
+    {"name":"obj_library_bubble","order":1,"path":"objects/obj_library_bubble/obj_library_bubble.yy",},
     {"name":"obj_nasa_psyche_logo","order":6,"path":"objects/obj_nasa_psyche_logo/obj_nasa_psyche_logo.yy",},
     {"name":"obj_par_interactable","order":1,"path":"objects/obj_par_interactable/obj_par_interactable.yy",},
     {"name":"obj_points_counter_clothing","order":5,"path":"objects/obj_points_counter_clothing/obj_points_counter_clothing.yy",},
@@ -56,6 +57,7 @@
     {"name":"spr_color_blocks","order":1,"path":"sprites/spr_color_blocks/spr_color_blocks.yy",},
     {"name":"spr_lab_floor","order":6,"path":"sprites/spr_lab_floor/spr_lab_floor.yy",},
     {"name":"spr_lab_wall","order":1,"path":"sprites/spr_lab_wall/spr_lab_wall.yy",},
+    {"name":"spr_library_bubble","order":8,"path":"sprites/spr_library_bubble/spr_library_bubble.yy",},
     {"name":"spr_library_door","order":2,"path":"sprites/spr_library_door/spr_library_door.yy",},
     {"name":"spr_lula_walk","order":7,"path":"sprites/spr_lula_walk/spr_lula_walk.yy",},
     {"name":"spr_lula","order":17,"path":"sprites/spr_lula/spr_lula.yy",},
@@ -74,5 +76,6 @@
     {"name":"tile_lab_floor","order":1,"path":"tilesets/tile_lab_floor/tile_lab_floor.yy",},
     {"name":"tile_lab_wall","order":2,"path":"tilesets/tile_lab_wall/tile_lab_wall.yy",},
     {"name":"tile_nasa_psyche","order":5,"path":"tilesets/tile_nasa_psyche/tile_nasa_psyche.yy",},
+    {"name":"TileSet7","order":6,"path":"tilesets/TileSet7/TileSet7.yy",},
   ],
 }

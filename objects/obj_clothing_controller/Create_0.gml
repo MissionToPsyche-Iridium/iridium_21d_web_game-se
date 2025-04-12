@@ -33,16 +33,7 @@ colliding_with_door = false;
 colliding_with_mirror = false;
 
 colliding_with_book = false;
-colliding_with_book1 = false;
-colliding_with_book2 = false;
-colliding_with_book3 = false;
-colliding_with_book4 = false;
-colliding_with_book5 = false;
-colliding_with_book6 = false;
-colliding_with_book7 = false;
-colliding_with_book8 = false;
-colliding_with_book9 = false;
-colliding_with_book10 = false;
+show_library_bubble = false;
 
 convo_in_progress = false;
 
@@ -82,10 +73,10 @@ cloting_from_s3 = 0;
 ready_for_results_1 = false;
 ready_for_results_2 = false;
 
-wait_timer = 1600;
+wait_timer = 800;
 
 number_professional = 0;
 
 clothing_points = 0;
 intro = true;
-intro_counter = 600;
+intro_counter = 300;

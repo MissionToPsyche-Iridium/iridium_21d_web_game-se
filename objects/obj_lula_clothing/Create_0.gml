@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 depth = -y;
-walkSpeed = 8;
+walkSpeed = 16;
 vx = 0;
 vy = 0;
 dir = 3;
