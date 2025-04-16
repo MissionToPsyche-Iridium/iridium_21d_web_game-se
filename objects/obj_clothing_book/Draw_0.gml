@@ -7,8 +7,8 @@ if (obj_clothing_controller.show_library_bubble) {
 draw_sprite(
         spr_library_bubble,
         0,
-        x,
-        y - 120
+        x+110,
+        y - 170
     );
 
 	
