@@ -50,6 +50,17 @@
   ],
   "isDnd":false,
   "layers":[
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":-200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":375,"SerialiseWidth":375,"TileCompressedData":[
+          -11746,-2147483648,16,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,-359,-2147483648,16,16,17,18,19,20,21,22,
+          23,24,25,26,27,28,29,30,31,-359,-2147483648,16,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,-359,
+          -2147483648,16,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,-359,-2147483648,16,64,65,66,67,68,69,
+          70,71,72,73,74,75,76,77,78,79,-359,-2147483648,16,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,-359,
+          -2147483648,16,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,-126613,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tile_library","path":"tilesets/tile_library/tile_library.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Exit","depth":-100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Exit","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":375,"SerialiseWidth":375,"TileCompressedData":[
+          -15578,-2147483648,7,1,2,3,4,5,6,7,-368,-2147483648,7,9,10,11,12,13,14,15,-368,-2147483648,7,17,18,19,
+          20,21,22,23,-368,-2147483648,7,25,26,27,28,29,30,31,-123915,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet8","path":"tilesets/TileSet8/TileSet8.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_16FE51CB","colour":4294967295,"frozen":true,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16FE51CB","objectId":{"name":"obj_lula_clothing","path":"objects/obj_lula_clothing/obj_lula_clothing.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2656.0,"y":832.0,},
         {"$GMRInstance":"v1","%Name":"inst_18111A09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_18111A09","objectId":{"name":"obj_scientist_1","path":"objects/obj_scientist_1/obj_scientist_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2464.0,"y":480.0,},
