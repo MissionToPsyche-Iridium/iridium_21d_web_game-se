@@ -5,7 +5,7 @@
 .idea/
 
 # Build directory
-.build/
+
 
 # Compiled class file
 *.class
@@ -36,9 +36,6 @@ replay_pid*
 .DS_Store
 
 # Build folders
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
 !**/src/test/**/build/
 
 # IntelliJ IDEA
@@ -50,7 +47,6 @@ build/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
 !**/src/test/**/out/
 
 # Eclipse
@@ -79,4 +75,3 @@ bin/
 # Local Files
 /sprite_pics/
 # Local files
-*jareth*
