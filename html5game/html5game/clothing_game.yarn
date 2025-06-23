@@ -1,0 +1,258 @@
+title: Start
+---
+Lula:  Help me find the right clothes to impress the board!
+
+Lula:  Did you help me find the right clothes?
+  ->Yes
+  ->No
+===
+
+title:  Scientist1_Briefcase
+---
+Scientist1:  Hi!  If you answer my questions, I will help you prepare for your presentation!
+
+Scientist1:  Is Psyche a class M asteroid?
+  ->Yes
+    Scientist1:  Correct!  Here, take this briefcase!
+  ->No
+    Scientist1:  Incorrect!
+
+Scientist1:  Thanks!
+
+===
+
+title:  Scientist1_Cravate
+---
+Scientist1:  Are you ready for my second question?
+
+Scientist1:  Approximately how big is Psyche?
+  ->About 220 kilometers across
+      Scientist1:  Yes! Here, take this cravate!
+  ->About 2200 kilometers across
+      Scientist1:  Oh, no!
+Scientist1:  Thanks!
+===
+
+title:  Scientist1_Monocle
+---
+Scientist1:  Are you ready for my third question?
+
+Scientist1:  True or False?  Psyche is likely rich in metals.
+  ->True
+      Scientist1:  Correct!
+  ->False
+      Scientist1:  Incorrect!
+
+Scientist1:  Thanks!
+===
+
+title:  Scientist1_Done
+---
+Scientist1:  That's all from me!  If you wear those accessories, you are sure to succeed!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Scientist2_Goggles
+---
+Scientist2:  If you answer this question, I will help you get ready for your presentation!
+
+Scientist2:  Psyche was the _____ asteroid to be discovered.
+  ->16th
+      Scientist2:  Correct!
+  ->20th
+      Scientist2:  Incorrect!
+
+Scientist2:  Thanks!
+===
+
+title:  Scientist2_Snorkel
+---
+Scientist2:  Are you ready for my second question??
+
+Scientist2:  Who discovered Psyche?
+  ->Annibale de Gasparis, an Italian astronomer
+      Scientist2:  Correct! Here, take this snorkel!
+  ->Neil de Grasse Tyson, a famous contemporary astrophysicist
+      Scientist2:  Incorrect!
+
+Scientist2:  Thanks!
+===
+
+title:  Scientist2_Floaties
+---
+Scientist2:  A goal of the Pysche mission is...
+  ->...to study the composition of the asteroid
+    Scientist2:  Correct!
+  ->...to walk on the surface of the asteroid
+    Scientist2:  Incorrect!
+
+Scientist2:  Let's talk soon!
+===
+
+title:  Scientist2_Done
+---
+Scientist2:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Scientist3_Helm
+---
+Scientist3:  Scientists will use a magnetometer to...
+  ->...help determine if Psyche is the core of an early planet
+    Scientist3:  Correct!
+  ->...determine the chemical composition of Psyche
+    Scientist3:  Incorrect!
+
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Armor
+---
+Scientist3:  Scientists will use a spectrometer to...
+  ->...determine the chemical composition of the asteroid
+    Scientist3:  Correct!
+  ->...capture images of the asteroid
+    Scientist3:  Incorrect!
+    
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Boots
+---
+Scientist3:  Scientists will use multispectral imagers to...
+  ->...capture images of the surface of Psyche
+    Scientist3:  Correct!
+  ->...help determine if Psyche is the core of an early planet
+    Scientist3:  Incorrect!
+Scientist3:  Let's talk soon!
+===
+
+title:  Scientist3_Done
+---
+Scientist3:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Door_Incomplete
+---
+: You still have scientists to talk to!  Come back later!
+===
+
+title:  Door_Professional
+---
+: You look great!  You are going to nail this pitch!
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title:  Door_Swim
+---
+:  ...You know, I don't think there is that much water on Psyche... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+:
+===
+
+title:  Door_Knight
+---
+:  ...I think that's the wrong kind of protective suit... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title: Mirror
+---
+: Are you ready to get dressed?
+  -> Yes
+  -> No
+
+:  Looking good!
+===
+
+title: pq1
+---
+Psyche is a type ___ asteroid?
+  -> M <<jump correct>>  // Jump to correct node
+  -> A <<jump incorrect>> // Jump to incorrect node
+===
+
+title: correct
+---
+Correct! Psyche is a type M asteroid.
+===
+
+title: incorrect
+---
+Incorrect. Psyche is not a type A asteroid.
+===
+
+
+title:  Book
+---
+Psyche is a Class M asteroid.
+===
+
+title:  Book1
+---
+Psyche is about 226 km (140 miles) across.
+===
+
+
+title:  Book2
+---
+Psyche is likely rich in metals.
+===
+
+
+title:  Book3
+---
+Psyche was the 16th asteroid to be discovered.
+===
+
+
+title:  Book4
+---
+Psyche was discovered in 1852 by Annibale de Gasparis, an Italian astronomer.
+===
+
+
+title:  Book5
+---
+A goal of the Psyche mission is to discover the composition of Psyche.
+===
+
+
+title:  Book6
+---
+Scientists will use a magnetometer to help determine if Psyche is the core of an early planet.
+===
+
+
+title:  Book7
+---
+Scientists will use a spectrometer to determine the chemical composition of the asteroid.
+===
+
+title:  Book8
+---
+Scientists will use multispectral imagers to capture images of the surface of Psyche.
+===
+
+
+
+
+title:  DoorGeneral
+---
+Are you ready to go to the pitch?
+
+  ->Yes
+  ->No
+
+===

@@ -1,0 +1,60 @@
+title:  Start
+---
+Lula:  Welcome to Lula Llama and the LlamaNation Go to Space!
+
+Lula:  Help me reach my dream and organize a space mission to the asteroid Psyche!
+
+Lula:  Are you ready?
+  ->Yes
+  ->No
+===
+
+title:  ClothingGame
+---
+Lula:  Help me find the right clothes to impress the board!
+
+Lula:  Did you help me find the right clothes?
+  ->Yes
+  ->No
+===
+
+title:  JumpGame
+---
+Lula:  I have to jump through hoops to earn money for the mission!
+
+Lula:  Did I make enough money?
+  ->Yes
+  ->No
+===
+
+title:  PizzaGame
+---
+Lula:  People are hungry!  Help me get the orders to the right people!
+
+Lula:  Did I get the orders to the right people?
+  ->Yes
+  ->No
+===
+
+title:  DeckGame
+---
+Lula:  Help me choose my science team!
+
+Lula:  Did I choose a good team?
+  ->Yes
+  ->No
+===
+
+title:  RhythmGame
+---
+Lula:  Help me build the rocket!
+
+Lula:  Did I build the rocket correctly?
+  ->Yes
+  ->No
+===
+
+title:  End
+---
+Lula:  You helped me send off the mission to Psyche!  Thanks!
+===

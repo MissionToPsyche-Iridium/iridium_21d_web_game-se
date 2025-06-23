@@ -1,0 +1,347 @@
+title: Start
+---
+Lula:  Help me find the right clothes to impress the board!  Answer questions from the scientists to win accessories.  Then, go to the mirror to get dressed!  If you get stuck, check out the library on the left!
+
+===
+
+title:  Scientist1_IntroA
+---
+Scientist1:  Hi!  If you answer my questions, I will help you prepare for your presentation!
+
+<<jump Randomizer>>
+===
+
+title:  Scientist1_IntroB
+---
+Scientist1:  Are you ready for my second question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist1_IntroC
+---
+Scientist1:  Are you ready for my third question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist1_Done
+---
+Scientist1:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+
+
+
+title:  Scientist2_IntroA
+---
+Scientist2:  Hi!  If you answer my questions, I will help you prepare for your presentation!
+
+<<jump Randomizer>>
+===
+
+title:  Scientist2_IntroB
+---
+Scientist2:  Are you ready for my second question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist2_IntroC
+---
+Scientist2:  Are you ready for my third question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist2_Done
+---
+Scientist2:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+
+
+title:  Scientist3_IntroA
+---
+Scientist:  Hi!  If you answer my questions, I will help you prepare for your presentation!
+
+<<jump Randomizer>>
+===
+
+title:  Scientist3_IntroB
+---
+Scientist:  Are you ready for my second question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist3_IntroC
+---
+Scientist:  Are you ready for my third question?
+
+<<jump Randomizer>>
+===
+
+title:  Scientist3_Done
+---
+Scientist3:  That's all from me!  Good luck with your pitch!  Psyche, here we come!
+===
+
+title:  Door_Incomplete
+---
+: You still have scientists to talk to!  Come back later!
+===
+
+title:  Door_Professional
+---
+: You look great!  You are going to nail this pitch!
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title:  Door_Swim
+---
+:  ...You know, I don't think there is that much water on Psyche... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+:
+===
+
+title:  Door_Knight
+---
+:  ...I think that's the wrong kind of protective suit... I'm worried.
+
+: Do you want to head to the pitch or change clothes (to be added)?
+  ->Head to the pitch
+  ->Change clothes (to be added)
+
+:
+===
+
+title: Randomizer
+---
+<<if $rand_branch == 0>>
+<<jump ran0>>
+<<elseif $rand_branch == 1>>
+<<jump ran1>>
+<<elseif $rand_branch == 2>>
+<<jump ran2>>
+<<elseif $rand_branch == 3>>
+<<jump ran3>>
+<<elseif $rand_branch == 4>>
+<<jump ran4>>
+<<elseif $rand_branch == 5>>
+<<jump ran5>>
+<<elseif $rand_branch == 6>>
+<<jump ran6>>
+<<elseif $rand_branch == 7>>
+<<jump ran7>>
+<<elseif $rand_branch == 8>>
+<<jump ran8>>
+<<else>>
+<<jump ran9>>
+<<endif>>
+===
+
+
+title: Mirror
+---
+: Are you ready to get dressed?
+  -> Yes
+  -> No
+
+:  Click on three pieces of clothing in your inventory to get dressed...Make good choices!  Click on one top accessory, one middle accessory, and one bottom accessory.
+===
+
+
+title:  Book
+---
+Psyche is a Class M asteroid.
+===
+
+title:  Book1
+---
+Psyche is about 226 km (140 miles) across.
+===
+
+
+title:  Book2
+---
+Psyche is likely rich in metals.
+===
+
+
+title:  Book3
+---
+Psyche was the 16th asteroid to be discovered.
+===
+
+
+title:  Book4
+---
+Psyche was discovered in 1852 by Annibale de Gasparis, an Italian astronomer.
+===
+
+
+title:  Book5
+---
+A goal of the Psyche mission is to discover the composition of Psyche.
+===
+
+
+title:  Book6
+---
+Scientists will use a magnetometer to help determine if Psyche is the core of an early planet.
+===
+
+
+title:  Book7
+---
+Scientists will use a spectrometer to determine the chemical composition of the asteroid.
+===
+
+title:  Book8
+---
+Scientists will use multispectral imagers to capture images of the surface of Psyche.
+===
+
+title:  Book9
+---
+The spacecraft launched towards Psyche is approximately the size of a tennis court.
+===
+
+title:  Book10
+---
+The instruments inside of the spacecraft launched towards Psyche are powered by solar energy.
+===
+
+
+title:  DoorGeneral
+---
+Are you ready to go to the pitch?
+
+  ->Yes
+  ->No
+
+===
+
+title: Correct
+---
+<<set $outcome = 1>>
+
+Great job! You got it right.
+===
+
+title:  Incorrect
+---
+<<set $outcome = 0>>
+
+Oh no!  That's not right!
+===
+
+title:  ran0
+---
+Is Psyche a class M asteroid?
+  ->Yes
+    <<jump Correct>>
+  ->No
+    <<jump Incorrect>>
+
+===
+
+title:  ran1
+---
+Approximately how big is Psyche?
+  ->About 220 kilometers across
+    <<jump Correct>>
+  ->About 2200 kilometers across
+    <<jump Incorrect>>
+===
+
+title:  ran2
+---
+True or False?  Psyche is likely rich in metals.
+  ->True
+      <<jump Correct>>
+  ->False
+      <<jump Incorrect>>
+===
+
+title:  ran3
+---
+Who discovered Psyche?
+    ->Annibale de Gasparis, an Italian astronomer
+      <<jump Correct>>
+    ->Neil de Grasse Tyson, a famous contemporary astrophysicist
+        <<jump Incorrect>>
+===
+
+title:  ran4
+---
+A goal of the Pysche mission is...
+  ->...to study the composition of the asteroid
+    <<jump Correct>>
+  ->...to walk on the surface of the asteroid
+    <<jump Incorrect>>
+===
+
+title:  ran5
+---
+Scientists will use a magnetometer to...
+  ->...help determine if Psyche is the core of an early planet
+    <<jump Correct>>
+  ->...determine the chemical composition of Psyche
+    <<jump Incorrect>>
+===
+
+title:  ran6
+---
+Scientists will use a spectrometer to...
+  ->...determine the chemical composition of the asteroid
+    <<jump Correct>>
+  ->...capture images of the asteroid
+    <<jump Incorrect>>
+
+===
+
+title:  ran7
+---
+Scientists will use multispectral imagers to...
+  ->...capture images of the surface of Psyche
+    <<jump Correct>>
+  ->...help determine if Psyche is the core of an early planet
+    <<jump Incorrect>>
+
+===
+
+title:  ran8
+---
+The spacecraft that was launched to reach Psyche is approximately the size of...
+
+  ->A basketball court
+    <<jump Incorrect>>
+  ->A tennis court
+    <<jump Correct>>
+  ->A football field
+    <<jump Incorrect>>
+
+===
+
+title:  ran9
+---
+Everything on board the Psyche spacecraft is powered by...
+
+  ->Gasoline
+    <<jump Incorrect>>
+  ->Petroleum
+    <<jump Incorrect>>
+  ->Solar energy
+    <<jump Correct>>
+
+===
